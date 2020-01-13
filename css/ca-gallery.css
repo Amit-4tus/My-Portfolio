@@ -900,32 +900,32 @@ textarea {
 }
 
 .specialities-bg {
-    background-image: url('/img/color\ explosion\ 1\ mobile.jpg');
+    background-image: url('../img/color\ explosion\ 1\ mobile.jpg');
 }
 
 @media (min-width: 550px) {
     .specialities-bg {
-        background-image: url('/img/color\ explosion\ 1.jpg');
+        background-image: url('../img/color\ explosion\ 1.jpg');
     }
 }
 
 .portfolio-bg {
-    background-image: url('/img/color\ explosion\ 2\ mobile.jpg');
+    background-image: url('../img/color\ explosion\ 2\ mobile.jpg');
 }
 
 @media (min-width: 550px) {
     .portfolio-bg {
-        background-image: url('/img/color\ explosion\ 2.jpg');
+        background-image: url('../img/color\ explosion\ 2.jpg');
     }
 }
 
 .me-bg {
-    background-image: url('/img/color\ explosion\ 3\ mobile.jpg');
+    background-image: url('../img/color\ explosion\ 3\ mobile.jpg');
 }
 
 @media (min-width: 550px) {
     .me-bg {
-        background-image: url('/img/color\ explosion\ 3.jpg');
+        background-image: url('../img/color\ explosion\ 3.jpg');
     }
 }
 
