@@ -2,6 +2,7 @@ body {
     width: 100vw;
     overflow-x: hidden;
     font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-image: linear-gradient(to right, black, rgb(71, 0, 71), black);
 }
 
 p {
@@ -28,15 +29,10 @@ section {
 
 ::-webkit-scrollbar {
     width: 17px;
-    background-color: transparent;
 }
 
 ::-webkit-scrollbar-track {
-    background-color: transparent;
-}
-
-::-webkit-scrollbar-track-piece {
-    background-color: transparent;
+    background-color: lightgray;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -52,6 +48,7 @@ section h2.section-heading {
     font-size: 40px;
     margin-top: 0;
     margin-bottom: 15px;
+    color: lightgray;
 }
 
 section h3.section-subheading {
@@ -115,7 +112,7 @@ body {
 .offcanvas-aside {
     position: fixed;
     height: 100%;
-    background: #ffe893ad;
+    background: #ffe893d3;
     width: 80vw;
     right: -80vw;
     z-index: 10;
@@ -123,7 +120,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
 }
 
 .offcanvas-aside img {
@@ -214,7 +210,7 @@ body {
     #mainNav.navbar-shrink {
         padding-top: 0;
         padding-bottom: 0;
-        background-color: #222222;
+        background-color: #2b2b2bbe;
     }
     #mainNav.navbar-shrink .navbar-brand {
         font-size: 1.25em;
@@ -238,6 +234,7 @@ header.masthead {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    box-shadow: 0px 0px 100px 100px rgb(0, 0, 0);
 }
 
 header.masthead .intro-text .intro-lead-in {
@@ -278,6 +275,7 @@ header.masthead .intro-text .intro-heading {
 }
 
 .service-heading {
+    color: lightgray;
     margin: 15px 0;
     text-transform: none;
 }
@@ -291,6 +289,7 @@ header.masthead .intro-text .intro-heading {
     position: relative;
     display: block;
     max-width: 400px;
+    background-color: #2b2b2bbe;
     margin: 0 auto;
     cursor: pointer;
 }
@@ -332,9 +331,10 @@ header.masthead .intro-text .intro-heading {
 #portfolio .portfolio-item .portfolio-caption {
     max-width: 400px;
     margin: 0 auto;
-    padding: 25px;
+    padding: 20px 0;
     text-align: center;
-    background-color: white;
+    background-color: #2b2b2bbe;
+    color: rgb(199, 199, 199);
 }
 
 #portfolio .portfolio-item .portfolio-caption h4 {
@@ -639,9 +639,9 @@ header.masthead .intro-text .intro-heading {
 }
 
 .team-member img {
-    width: 225px;
-    height: 225px;
-    border: 7px solid white;
+    width: 250px;
+    height: 250px;
+    border: 8px solid black;
 }
 
 .team-member h4 {
@@ -838,13 +838,112 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 
 .contact-form {
     width: 90%;
+    margin: 0;
+}
+
+.contact-me-header {
+    color: lightgray;
+    margin-top: 20%;
+    margin-bottom: 10%;
+}
+
+aside .myEmail {
+    margin-bottom: 5%;
+}
+
+aside h6 {
+    color: white;
+}
+
+aside p {
+    color: #fed136;
+}
+
+.optional {
+    font-size: .8rem;
+}
+
+.contact-form input {
+    margin-bottom: 6%;
 }
 
 textarea {
     width: 100%;
     margin: 0 auto;
+    margin-bottom: 5%;
+}
+
+.submitBtn {
+    background-color: #fed136;
+    color: white;
+    border: 0px;
+    padding: 3% 6%;
+    border-radius: 5px;
+    font-weight: 700;
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
 }
 
 #me {
     padding-bottom: 8% !important;
+}
+
+.img-fluid {
+    width: 100%;
+}
+
+.bg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0px 0px 100px 100px rgb(0, 0, 0) !important;
+}
+
+.specialities-bg {
+    background-image: url('/img/color\ explosion\ 1\ mobile.jpg');
+}
+
+@media (min-width: 550px) {
+    .specialities-bg {
+        background-image: url('/img/color\ explosion\ 1.jpg');
+    }
+}
+
+.portfolio-bg {
+    background-image: url('/img/color\ explosion\ 2\ mobile.jpg');
+}
+
+@media (min-width: 550px) {
+    .portfolio-bg {
+        background-image: url('/img/color\ explosion\ 2.jpg');
+    }
+}
+
+.me-bg {
+    background-image: url('/img/color\ explosion\ 3\ mobile.jpg');
+}
+
+@media (min-width: 550px) {
+    .me-bg {
+        background-image: url('/img/color\ explosion\ 3.jpg');
+    }
+}
+
+.bg-muted {
+    background-color: #2b2b2bbe;
+    padding: 5% 0;
+}
+
+.width-100 {
+    width: 100%;
+}
+
+.white-space {
+    width: 100%;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.my-name {
+    color: #fed136;
 }

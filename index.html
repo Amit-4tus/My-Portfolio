@@ -31,11 +31,25 @@
   <div class="offcanvas-btn" onClick="openCanvas()">
     <i class="fa fa-comment" aria-hidden="true"></i>
   </div>
-  <aside class="offcanvas-aside">
-    <h4>Contact Me</h4>
-    <form class="contact-form">
+  <aside class="offcanvas-aside bg-muted">
+    <h4 class="contact-me-header">Contact Me</h4>
+    <h6>Email</h6>
+    <a class="myEmail" href="mailto:amit.fortus4@email.com">amit.fortus4@email.com</a c>
+    <h6>Phone</h6>
+    <p class="phone-number">052-8024121</p>
+
+    <!-- <form class="contact-form">
+      <h4>Your Email:</h4>
+      <input type="email">
+      <h4>Your Phone Number:</h4>
+      <h6 class="optional">optional</h6>
+      <input type="tel">
+      <h4>Subject:</h4>
+      <input type="text">
+      <h4>Message:</h4>
       <textarea></textarea>
-    </form>
+      <input type="submit" class="submitBtn" onclick="doContactMe(event)">
+    </form> -->
   </aside>
 
   <!-- Navigation -->
@@ -67,7 +81,7 @@
   </nav>
 
   <!-- Header -->
-  <header class="masthead">
+  <header class="masthead bg">
     <div class="container">
       <div class="intro-text">
         <div class="intro-heading">Fire And Forget</div>
@@ -78,7 +92,7 @@
   </header>
 
   <!-- Specialities -->
-  <section id="services">
+  <section class="specialities-bg bg" id="services">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
@@ -87,7 +101,7 @@
         </div>
       </div>
       <div class="row text-center">
-        <div class="col-md-4">
+        <div class="col-md-4 bg-muted">
           <span class="fa-stack fa-4x">
             <i class="fa fa-circle fa-stack-2x text-primary"></i>
             <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
@@ -96,7 +110,7 @@
           <p class="text-muted">Building apps with React & Vue. Designing in many techniques & practices including SASS,
             mobile-first, pixek-perfect</p>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 bg-muted">
           <span class="fa-stack fa-4x">
             <i class="fa fa-circle fa-stack-2x text-primary"></i>
             <i class="fa fas fa-cogs fa-stack-1x fa-inverse"></i>
@@ -105,7 +119,7 @@
           <p class="text-muted">Deep understanding of the JavaScript basics and a true attraction for optimising complex
             algorithms</p>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 bg-muted">
           <span class="fa-stack fa-4x">
             <i class="fa fa-circle fa-stack-2x text-primary"></i>
             <i class="fa fas fa-server fa-stack-1x fa-inverse"></i>
@@ -119,7 +133,7 @@
   </section>
 
   <!-- Portfolio Grid -->
-  <section class="bg-light" id="portfolio">
+  <section class="portfolio-bg bg" id="portfolio">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
@@ -137,8 +151,8 @@
             </div>
             <img class="img-fluid" src="img/projects/homify-preview.png" alt="">
           </a>
-          <div class="portfolio-caption">
-            <h4>Homify</h4>
+          <div class="portfolio-caption width-100">
+            <h4 class="white-space">Homify</h4>
             <p class="text-muted">An easy way to rent vacation homes</p>
           </div>
         </div>
@@ -149,10 +163,10 @@
                 <i class="fa fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid square" src="img/projects/appsus.png" alt="">
+            <img class="img-fluid square" src="img/projects/appsus-preview.png" alt="">
           </a>
-          <div class="portfolio-caption">
-            <h4>AppSus</h4>
+          <div class="portfolio-caption width-100">
+            <h4 class="white-space">AppSus</h4 class="white-space">
             <p class="text-muted">3 everyday apps combined into one</p>
           </div>
         </div>
@@ -165,8 +179,8 @@
             </div>
             <img class="img-fluid square" src="img/projects/memegen-preview.png" alt="">
           </a>
-          <div class="portfolio-caption">
-            <h4>MemeGen</h4>
+          <div class="portfolio-caption width-100">
+            <h4 class="white-space">MemeGen</h4 class="white-space">
             <p class="text-muted">An App that helps you generate memes</p>
           </div>
         </div>
@@ -177,11 +191,11 @@
                 <i class="fa fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="img/portfolio/04-thumbnail.jpg" alt="">
+            <img class="img-fluid" src="img/projects/mine-sweeper-preview.png" alt="">
           </a>
-          <div class="portfolio-caption">
-            <h4>Lines</h4>
-            <p class="text-muted">Branding</p>
+          <div class="portfolio-caption width-100">
+            <h4 class="white-space">Mine Sweeper</h4 class="white-space">
+            <p class="text-muted">Classic mine sweeper with a few extras</p>
           </div>
         </div>
         <div class="col-md-4 col-sm-6 portfolio-item">
@@ -191,11 +205,11 @@
                 <i class="fa fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="img/portfolio/05-thumbnail.jpg" alt="">
+            <img class="img-fluid" src="img/projects/guitar-modeler-preview.png" alt="">
           </a>
-          <div class="portfolio-caption">
-            <h4>Southwest</h4>
-            <p class="text-muted">Website Design</p>
+          <div class="portfolio-caption width-100">
+            <h4 class="white-space">Guitar Modeler</h4 class="white-space">
+            <p class="text-muted">A demo of the OD Guitars website</p>
           </div>
         </div>
         <div class="col-md-4 col-sm-6 portfolio-item">
@@ -205,48 +219,13 @@
                 <i class="fa fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="img/portfolio/06-thumbnail.jpg" alt="">
+            <img class="img-fluid" src="img/projects/ball-game-preview.png" alt="">
           </a>
-          <div class="portfolio-caption">
-            <h4>Window</h4>
-            <p class="text-muted">Photography</p>
+          <div class="portfolio-caption width-100">
+            <h4 class="white-space">Ball Game</h4 class="white-space">
+            <p class="text-muted">How fast can you collect all the balls?</p>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Me -->
-  <section class="bg-light" id="me" style="padding: 0px;">
-    <div class="row">
-      <div class="col-sm-4">
-        <div class="team-member">
-          <img class="mx-auto rounded-circle" src="img/portrait.jpeg" alt="">
-          <h4>Amit Fortus</h4>
-          <p class="text-muted">Full-Stack Web Developer</p>
-          <ul class="list-inline social-buttons">
-            <li class="list-inline-item">
-              <a href="https://www.facebook.com/amit.fortus">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="https://www.linkedin.com/in/amit-4tus-5a2656199/">
-                <i class="fab fa-linkedin-in"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-sm-8 flex-align-center">
-        <p class="large text-muted  about-description">Hi there :) I am a junior in the field of web development, but I
-          still have more practical skills than most juniors. I come from a bcakground of 10 years of experience in the
-          music industry.
-          You'd be surprised at how much running a band is similar to running a start-up, regarding especially the
-          dedication needed.
-          I am very hard working, and dedicated to my everyday and longterm goals.
-          I'd love to give what I have to give, and be part of your team.
-        </p>
       </div>
     </div>
   </section>
@@ -267,18 +246,19 @@
             <div class="col-lg-8 mx-auto">
               <div class="modal-body">
                 <!-- Project Details Go Here -->
-                <h2>Project Name</h2>
-                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                <img class="img-fluid d-block mx-auto" src="img/portfolio/01-full.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est
-                  blanditiis
-                  dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae
-                  cupiditate,
-                  maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                <h2>Homify</h2>
+                <p class="item-intro text-muted">An easy way to rent vacation homes</p>
+                <img class="img-fluid d-block mx-auto" src="img/projects/homify-details.png" alt="">
+                <p>
+                  This is the final project of the Coding Academy Bootcamp I did with 2 other students.
+                  This app was made within a single week. We worked day and night to bring it to it's final form within
+                  such a short period of time.
+                  In this project I focused mainly on the design; To make it look as profesional as possible.
+                </p>
                 <ul class="list-inline">
-                  <li>Date: January 2017</li>
-                  <li>Client: Threads</li>
-                  <li>Category: Illustration</li>
+                  <li>Date: December 2019</li>
+                  <li>Time span: 1 week</li>
+                  <li>Category: Design</li>
                 </ul>
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                   <i class="fa fa-times"></i>
@@ -305,18 +285,19 @@
             <div class="col-lg-8 mx-auto">
               <div class="modal-body">
                 <!-- Project Details Go Here -->
-                <h2>Project Name</h2>
-                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                <img class="img-fluid d-block mx-auto" src="img/portfolio/02-full.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est
-                  blanditiis
-                  dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae
-                  cupiditate,
-                  maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                <h2>Appsus</h2>
+                <p class="item-intro text-muted">3 everyday apps combined into one</p>
+                <img class="img-fluid d-block mx-auto" src="img/projects/appsus-details.png" alt="">
+                <p>
+                  This app was the 3rd project of the Coding Academy Bootcamp I did with another student.
+                  This project took 3 day to make. THe work was very intensive.
+                  Here I focused less on design, and more on functionality.
+                  I used web sockets to send emails, dynamic components for the todos and use of api's for the books.
+                </p>
                 <ul class="list-inline">
-                  <li>Date: January 2017</li>
-                  <li>Client: Explore</li>
-                  <li>Category: Graphic Design</li>
+                  <li>Date: November 2019</li>
+                  <li>Time span: 3 days</li>
+                  <li>Category: Functionality</li>
                 </ul>
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                   <i class="fa fa-times"></i>
@@ -343,18 +324,18 @@
             <div class="col-lg-8 mx-auto">
               <div class="modal-body">
                 <!-- Project Details Go Here -->
-                <h2>Project Name</h2>
-                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                <img class="img-fluid d-block mx-auto" src="img/portfolio/03-full.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est
-                  blanditiis
-                  dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae
-                  cupiditate,
-                  maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                <h2>MemeGen</h2>
+                <p class="item-intro text-muted">An App that helps you generate memes</p>
+                <img class="img-fluid d-block mx-auto" src="img/projects/memegen-details.png" alt="">
+                <p>
+                  This tool I built as the 2nd project of the Coding Academy bootcamp.
+                  I made it to strengthen my abilities working with the html canvas.
+                  It was lots of fun seeing my friends make memes with the tool I created.
+                </p>
                 <ul class="list-inline">
-                  <li>Date: January 2017</li>
-                  <li>Client: Finish</li>
-                  <li>Category: Identity</li>
+                  <li>Date: October 2019</li>
+                  <li>Time span: 3 days</li>
+                  <li>Category: functionality & design</li>
                 </ul>
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                   <i class="fa fa-times"></i>
@@ -381,18 +362,20 @@
             <div class="col-lg-8 mx-auto">
               <div class="modal-body">
                 <!-- Project Details Go Here -->
-                <h2>Project Name</h2>
-                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                <img class="img-fluid d-block mx-auto" src="img/portfolio/04-full.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est
-                  blanditiis
-                  dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae
-                  cupiditate,
-                  maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                <h2>Mine Sweeper</h2>
+                <p class="item-intro text-muted">Classic mine sweeper with a few extras</p>
+                <img class="img-fluid d-block mx-auto" src="img/projects/mine-sweeper-details.png" alt="">
+                <p>
+                  I made this as the 1st project for the Coding Academy bootcamp.
+                  It took just 3 days to make.
+                  Here I worked on utilizing the basics of Javascript to the fullest.
+                  My focus here was on the algorithm and the functionality of the game.
+                  I also learned how to play mine sweeper which was great 😆
+                </p>
                 <ul class="list-inline">
-                  <li>Date: January 2017</li>
-                  <li>Client: Lines</li>
-                  <li>Category: Branding</li>
+                  <li>Date: September 2019</li>
+                  <li>Time span: 3 days</li>
+                  <li>Category: Algorithms</li>
                 </ul>
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                   <i class="fa fa-times"></i>
@@ -419,18 +402,18 @@
             <div class="col-lg-8 mx-auto">
               <div class="modal-body">
                 <!-- Project Details Go Here -->
-                <h2>Project Name</h2>
-                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                <img class="img-fluid d-block mx-auto" src="img/portfolio/05-full.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est
-                  blanditiis
-                  dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae
-                  cupiditate,
-                  maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                <h2>Guitar Modeler</h2>
+                <p class="item-intro text-muted">A demo of the OD Guitars website</p>
+                <img class="img-fluid d-block mx-auto" src="img/projects/guitar-modeler-details.png" alt="">
+                <p>
+                  This is a demo I did for the OD Guitars brand before building their website.
+                  It serves a way for customers to see how the guitar they're designing will look.
+                </p>
                 <ul class="list-inline">
-                  <li>Date: January 2017</li>
-                  <li>Client: Southwest</li>
-                  <li>Category: Website Design</li>
+                  <li>Date: January 2020</li>
+                  <li>Time span: 1 day</li>
+                  <li>Client: OD Guitars</li>
+                  <li>Category: 2D Modeling</li>
                 </ul>
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                   <i class="fa fa-times"></i>
@@ -457,18 +440,17 @@
             <div class="col-lg-8 mx-auto">
               <div class="modal-body">
                 <!-- Project Details Go Here -->
-                <h2>Project Name</h2>
-                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                <img class="img-fluid d-block mx-auto" src="img/portfolio/06-full.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est
-                  blanditiis
-                  dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae
-                  cupiditate,
-                  maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                <h2>PBall Game</h2>
+                <p class="item-intro text-muted">How fast can you collect all the balls?</p>
+                <img class="img-fluid d-block mx-auto" src="img/projects/ball-game-details.png" alt="">
+                <p>
+                  This is one of the many many minor projects I did as part of the Coding Academy bootcamp.
+                  With this project I got familiar in working with key events.
+                  It was a small but fun project.
+                </p>
                 <ul class="list-inline">
-                  <li>Date: January 2017</li>
-                  <li>Client: Window</li>
-                  <li>Category: Photography</li>
+                  <li>Date: September 2019</li>
+                  <li>Time span: 1 day</li>
                 </ul>
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                   <i class="fa fa-times"></i>
@@ -480,6 +462,41 @@
       </div>
     </div>
   </div>
+
+  <!-- Me -->
+  <section class="me-bg bg" id="me" style="padding: 0px;">
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="team-member">
+          <img class="mx-auto rounded-circle" src="img/portrait.jpeg" alt="">
+          <h4 class="my-name">Amit Fortus</h4>
+          <p class="text-muted">Full-Stack Web Developer</p>
+          <ul class="list-inline social-buttons">
+            <li class="list-inline-item">
+              <a href="https://www.facebook.com/amit.fortus">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.linkedin.com/in/amit-4tus-5a2656199/">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm-8 flex-align-center">
+        <p class="large text-muted about-description bg-muted" style="padding: 5%;">Hi there :) I am a junior in the field of web development, but I
+          still have more practical skills than most juniors. I come from a bcakground of 10 years of experience in the
+          music industry.
+          You'd be surprised at how much running a band is similar to running a start-up, regarding especially the
+          dedication needed.
+          I am very hard working, and dedicated to my everyday and longterm goals.
+          I'd love to give what I have to give, and be part of your team.
+        </p>
+      </div>
+    </div>
+  </section>
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
