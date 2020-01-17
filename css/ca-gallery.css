@@ -947,3 +947,8 @@ textarea {
 .my-name {
     color: #fed136;
 }
+
+.check-it-out {
+    margin-bottom: 4%;
+    font-size: 1.5rem;
+}
